@@ -102,26 +102,6 @@ public class Main {
     	System.out.println(title);
     }
     
-    private void extractDesc(String input){
-    	String regexString = Pattern.quote("<title>") + "(.*?)" + Pattern.quote("</title>");
-    	Pattern pattern = Pattern.compile(regexString);
-    	Matcher matcher = pattern.matcher(input);
-    	
-    	while(matcher.find()) {
-    		title = matcher.group(1);
-    	}
-    }
-    
-    private void extractKeywords(String input){
-    	String regexString = Pattern.quote("<title>") + "(.*?)" + Pattern.quote("</title>");
-    	Pattern pattern = Pattern.compile(regexString);
-    	Matcher matcher = pattern.matcher(input);
-    	
-    	while(matcher.find()) {
-    		title = matcher.group(1);
-    	}
-    }
-    
     private void editing(){
     	System.out.println(editReport);
     }
