@@ -85,8 +85,9 @@ public class Main {
     	title = read;
     	
     	String editingString = "|" + url.toString() + "|TITLE|" + titleOld.toString() + "|" + title.toString() + "|";
-    	System.out.println(editingString);
+    	//System.out.println(editingString);
     	//editReport.concat(editingString);
+    	System.out.println("SUCCESSFUL");
     	editReport = editReport + editingString + "\n";
     }
     
